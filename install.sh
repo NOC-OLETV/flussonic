@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #SALVANDO TODAS AS OIDS
-cd /usr/local/src
+cd /usr/local/src/flussonic/
 snmpwalk -c admin -v 2c -M +/opt/flussonic/lib/mibs -m +STREAMER-MIB 127.0.0.1:4000 . > gera_oid.txt
 
 ARQOIDS="/usr/local/src/gera_oid.txt"
